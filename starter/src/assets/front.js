@@ -1,6 +1,6 @@
 let currencySymbol = '$';
 
-// Draws product list
+// Draws product list 
 function drawProducts() {
     let productList = document.querySelector('.products');
     let productItems = '';
@@ -57,7 +57,7 @@ function drawCheckout() {
     checkout.append(div);
 }
 
-// Initialize store with products, cart, and checkout
+ //Initialize store with products, cart, and checkout
 drawProducts();
 drawCart();
 drawCheckout();
