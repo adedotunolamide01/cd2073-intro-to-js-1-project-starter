@@ -99,8 +99,6 @@ function removeProductFromCart(productid){
 const item = getProduct(productid);
 item.quantity = 0;
     cart.splice(cart.indexOf(item), 1);
-    
-    
   };
 
 
@@ -127,11 +125,14 @@ cart.length = 0;
 - pay will return a positive number if money should be returned to customer
 */
 
+let totalPaid = 0;
 function pay(amount) {
-let total =0;
-total += amount;
-return total - cartTotal();
+totalPaid += amount;
+return totalPaid - cartTotal();
 }
+
+
+
 
 /* Place stand out suggestions here (stand out suggestions can be found at the bottom of the project rubric.)*/
 
